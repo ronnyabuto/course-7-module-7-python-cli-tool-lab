@@ -1,6 +1,3 @@
-# TODO: Define the Task class
-# Each task should store a title and a completed status (default False)
-# Add a complete() method that marks the task as completed and prints confirmation
 
 class Task:
     def __init__(self, title):
@@ -9,11 +6,8 @@ class Task:
 
     def complete(self):
         self.completed = True
-        print(f"✅ Task '{self.title}' completed.")
+        print(f"Task '{self.title}' completed.")
 
-# TODO: Define the User class
-# Each user has a name and a list of tasks
-# Add methods to add tasks and search tasks by title
 
 class User:
     def __init__(self, name):
@@ -22,7 +16,7 @@ class User:
 
     def add_task(self, task):
         self.tasks.append(task)
-        print(f"📌 Task '{task.title}' added to {self.name}.")
+        print(f"Task '{task.title}' added to {self.name}.")
 
     def get_task_by_title(self, title):
         for task in self.tasks:
